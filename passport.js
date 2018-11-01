@@ -20,8 +20,6 @@ passport.serializeUser((user, done) => {
     })
   })
 
-
-
   passport.use('local-signup', new LocalStrategy({
     usernameField: 'email',
     passwordField: 'password',
