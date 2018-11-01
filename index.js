@@ -27,7 +27,6 @@ app.use(cors());
   next();
 });*/
 
-
 app.get('/posts', function (req, res) {
     connection.query('SELECT * FROM assay', function (error, results, fields) {
       if (error) throw error;
